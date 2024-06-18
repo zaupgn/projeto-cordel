@@ -1,0 +1,107 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'moderno';
+    src: url(font/PassionOne-Bold.ttf) format(truetype);
+}
+@font-face {
+    font-family: 'versos';
+    src: url(font/RobotoCondensed-VariableFont_wght.ttf) format(truetype);
+}
+
+* root{
+    --fonte01: 'versos';
+    --fonte02: 'moderno';
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 3vw;
+}
+
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+header {
+    background-color: black;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: white;
+}
+
+header > h1 {
+    font-family: 'moderno';
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 8vh;
+    padding: 0px;
+    margin: 0px;
+}
+
+header > p {
+    font-family: 'versos';
+    text-align: center;
+    font-size: 16px;
+    margin: 0px;
+}
+
+section{
+    margin: 50px 0px 50px 20px;
+    font-family: 'versos';
+    padding: 5px 5px 5px 5px;
+   
+}
+
+section > p {
+    padding: 2px;
+    font-size: 3.5vh;
+}
+
+section#p02fora {
+    background: url(imagens/fundo01.avif) no-repeat right center fixed;
+    background-size: cover;
+    margin:0px;
+    padding: 1px 0px 1px 0px;
+    box-shadow: inset 1px 1px 2px 1px rgba(0, 0, 0, 0.377);
+    text-shadow: 1px 1px 0px black;
+
+}
+
+section.p02 {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.596);
+    color: white
+
+}
+
+section#p05fora {
+    background: url(imagens/fundo02.avif) no-repeat right center fixed;
+    background-size: cover;
+    margin:0px;
+    padding: 1px 0px 1px 0px;
+    box-shadow: inset 1px 1px 2px 1px rgba(0, 0, 0, 0.377);
+}
+
+section.p05 {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.596);
+    color: white
+}
+
+footer {
+    background-color: black;
+    padding: 7px;
+    font-family: 'versos';
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+header > p > a, footer > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+}
